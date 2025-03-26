@@ -16,6 +16,9 @@ sudo service redis-server start
 
 redis-cli
 
+Redis link: https://github.com/microsoftarchive/redis/releases/tag/win-3.2.100
+github link :https://github.com/jangalianand/spring-redis 
+
 --connection pool
 application.properties
 ---------------------------------------
