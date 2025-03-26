@@ -15,3 +15,33 @@ sudo apt-get install redis
 sudo service redis-server start
 
 redis-cli
+
+--connection pool
+application.properties
+---------------------------------------
+Database Connection Properties
+
+spring.application.name=student
+
+server.port=9090
+spring.datasource.url=jdbc:mysql://localhost:3306/test
+spring.datasource.username=root
+spring.datasource.password=****
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+
+
+HikariCP settings
+spring.datasource.hikari.connection-timeout=20000
+spring.datasource.hikari.maximum-pool-size=10
+spring.datasource.hikari.minimum-idle=5
+spring.datasource.hikari.idle-timeout=300000
+spring.datasource.hikari.pool-name=HikariCP
+spring.datasource.hikari.max-lifetime=600000
+
+Logging settings
+logging.level.com.zaxxer.hikari.HikariConfig=DEBUG
+logging.level.com.zaxxer.hikari=TRACE
