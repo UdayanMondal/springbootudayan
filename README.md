@@ -48,3 +48,7 @@ spring.datasource.hikari.max-lifetime=600000
 Logging settings
 logging.level.com.zaxxer.hikari.HikariConfig=DEBUG
 logging.level.com.zaxxer.hikari=TRACE
+
+MapStruct is a Java-based code generation tool used in Spring Boot and other Java applications to simplify the mapping between Java bean types. It helps in reducing the boilerplate code that developers typically write when converting one type of object to another. In the context of Spring Boot, you can use MapStruct to map DTOs (Data Transfer Objects) to entities or vice versa, which is a common requirement when building RESTful APIs or web applications.
+MapStruct is a Java-based code generation tool commonly used in Spring Boot applications to simplify and automate the mapping of data between different Java bean types, such as DTOs (Data Transfer Objects) and entities
+
